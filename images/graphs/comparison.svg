@@ -7,7 +7,7 @@
 <g id="Layer_1_1_">
 	<rect x="-1" y="-1.703" width="311" height="261"/>
 </g>
-<rect x="138.908" y="14.746" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 142.021 332.6672)" fill="#00FF00" width="2" height="244.348"/>
+<rect x="138.908" y="14.749" transform="matrix(0.7071 0.7071 -0.7071 0.7071 137.7967 -58.8265)" fill="#00FF00" width="2" height="244.346"/>
 <rect x="60" y="186.297" fill="#FFFF00" width="181" height="2"/>
 <path fill="#FF1D25" d="M53.501,223.67l-1.199-2.709l0.133-0.223c0.438-0.731,10.839-18.262,21.197-49.915
 	c9.669-29.549,21.195-77.438,21.195-137.774v-0.5h2.081v0.5c0,61.01-11.656,109.415-21.435,139.278
@@ -32,14 +32,6 @@
 		</g>
 	</g>
 	<g>
-		<g>
-			<text transform="matrix(1 0 0 1 44.4519 227.4216)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">0</text>
-			<text transform="matrix(1 0 0 1 44.4519 190.865)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">1</text>
-			<text transform="matrix(1 0 0 1 33.136 154.3084)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">100</text>
-			<text transform="matrix(1 0 0 1 21.82 117.7517)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">1,000</text>
-			<text transform="matrix(1 0 0 1 16.1618 81.1946)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">10,000</text>
-			<text transform="matrix(1 0 0 1 10.5041 44.6379)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">100,000</text>
-		</g>
 		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="223.563" x2="53.541" y2="40.779"/>
 		<g>
 			<g>
