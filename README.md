@@ -14,6 +14,7 @@ Sections are divided into:
 This website uses the following technologies to work properly:
 
 * JS & jQuery for interactivity 
+* jQuery tablesorte unoficial fork http://mottie.github.io/tablesorter/docs/
 * CSS + HTML for structure and styling
 * Git for VCS
 
