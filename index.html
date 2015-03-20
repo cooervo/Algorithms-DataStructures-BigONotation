@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/tables-styles.css">
+<link
+   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8">
+<title>Big O cheat sheets</title>
+
+<link rel="icon" href="images/icons/favicon.ico">
+
+</head>
+
+<body>
+   <!-- ==================== ASIDE=================== -->
+   <aside>
+      <a href="index.html"><img id="logo"
+         src="images/logo-algos.svg"
+         onerror="this.onerror=null; this.src='image.svg'"></a> <a
+         id="menu-button" href="#">Menu</a>
+      <nav id="responsive-nav">
+         <ul>
+            <li><a href="index.html"><img class="aside-icons"
+                  src="images/icons/cheat-sheets.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O cheat sheets</span></a></li>
+
+            <li><a href="intro.html"><img class="aside-icons"
+                  src="images/icons/intro-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">intro</span></a></li>
+
+            <li><a href="big-O-notation.html"><img
+                  class="aside-icons" src="images/icons/big-o-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O notation</span></a></li>
+
+            <li><a href="data-structures.html"><img
+                  class="aside-icons"
+                  src="images/icons/data-structures-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">data structures</span></a></li>
+
+            <li><a href="algorithms.html"><img
+                  class="aside-icons" src="images/icons/algo-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="responsnav-descriptionsive-hide">algorithms</span></a></li>
+
+            <li><a href="https://github.com/cooervo/algortihms-datastructures"
+               target="_blank"><img class="aside-icons"
+                  src="images/icons/github.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">Github</span></a></li>
+         </ul>
+      </nav>
+
+      <div id="share-div">
+         <ul id="share-list">
+
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
+                  src="images/icons/FB-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
+                  src="images/icons/twitter-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="https://plus.google.com/share?url=http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
+                  src="images/icons/google-plus-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+         </ul>
+      </div>
+
+   </aside>
+   <!-- ===================/END ASIDE============================ -->
+   <p id="greetings">
+      About: I made this simple website as a fun project to help
+      me understand better: algorithms and data structures. And also to
+      have some practice in: Java, JavaScript, CSS, HTML and responsive
+      web design(RWD). If you discover errors in the code or typos
+      I haven't noticed <a href="https://github.com/cooervo">please
+        let me know</a> or feel free to contribute by clicking this <a
+         href="https://github.com/cooervo/algortihms-datastructures">Github link <img
+         id="top-github" src="images/icons/github.svg"
+         onerror="this.onerror=null; this.src='image.svg'"></a>, fork
+      the project and make a pull request :)
+   </p>
+
+   <!-- ====================MAIN============================= -->
+   <div id="main">
+      <article>
+
+
+         <h1 class="titles">Instructions</h1>
+         <ul>
+            <li>Press the <img src="images/icons/sort-table.gif">
+               button to sort the column in ascending or descending
+               order
+            </li>
+            <li>Hover over any row to focus on it</li>
+         </ul>
+      </article>
+
+      <!-- ================SORTING ALGORITHMS TABLE================= -->
+      
+         <!-- In tags <td> attribute data-text="x" is used to guide 
+                  jquery.tablesorter.js in sorting by that attribute. script 
+                  "textExtraction" enables it: 
+                  
+                  How is data-text attribute given its value, remember:
+                  O(1) < O(log n) < O(n) < O(n log n) < O (n^2)
+                  
+                  Therefore:
+                  data-text="1"  === O(1)
+                  data-text="2"  === O(log n)
+                  data-text="3"  === O(n)
+                  data-text="4"  === O(n log n)
+                  data-text="5"  === O(n^2)
+        -->
+      
+      
+      
+      <table id="sorting-table" class="tablesorter">
+         <caption class="table-titles">Sorting Algorithms</caption>
+         <thead>
+            <tr>
+               <th id="first-cell" class="first-column" rowspan="2">Sorting
+                  Algorithms<img src="images/icons/sort-table.gif">
+               <th class="big-header-cells">Space complexity</th>
+               <th class="big-header-cells" colspan="3">Time
+                  complexity</th>
+            </tr>
+
+            <tr>
+               <th>Worst case<img src="images/icons/sort-table.gif"></th>
+
+               <th>Best case<img src="images/icons/sort-table.gif"></th>
+               <th>Average case<img
+                  src="images/icons/sort-table.gif"></th>
+               <th>Worst case<img src="images/icons/sort-table.gif"></th>
+            </tr>
+         </thead>
+
+         <tbody>
+
+            <tr>
+               <td class="first-column">Insertion Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="3" class="yellow">O(n)</td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Selection Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Smooth Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="3" class="yellow">O(n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+
+            </tr>
+
+            <tr>
+               <td class="first-column">Bubble Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="3" class="yellow">O(n)</td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+               <td data-text="5" class="red">O(n<sup>2</sup>)
+               </td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Shell Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="3" class="yellow">O(n)</td>
+               <td data-text="6" class="red">O(n log n<sup>2</sup>)
+               </td>
+               <td data-text="6" class="red">O(n log n<sup>2</sup>)
+               </td>
+            </tr>
+
+            <tr>
+
+               <td class="first-column">Mergesort</td>
+               <td data-text="3" class="yellow">O(n)</td>
+
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+
+            </tr>
+
+            <tr>
+
+               <td class="first-column">Quicksort</td>
+               <td data-text="2" class="green">O(log n)</td>
+
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+
+            </tr>
+
+            <tr>
+               <td class="first-column">Heapsort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+            </tr>
+
+
+         </tbody>
+
+      </table>
+
+      <!-- ================ DATA STRUCTURES TABLE================= -->
+      <table id="DS-table" class="tablesorter">
+         <caption class="table-titles">Data Structures
+            Comparison</caption>
+         <thead>
+            <tr>
+               <th id="first-cell" class="first-column" rowspan="2">Data
+                  Structures<img src="images/icons/sort-table.gif">
+               </th>
+               <th colspan="3" class="big-header-cells">Average
+                  Case</th>
+               <th colspan="3" class="big-header-cells">Worst Case</th>
+            </tr>
+            <tr>
+               <th>Search<img src="images/icons/sort-table.gif"></th>
+               <th>Insert<img src="images/icons/sort-table.gif"></th>
+               <th>Delete<img src="images/icons/sort-table.gif"></th>
+               <th>Search<img src="images/icons/sort-table.gif"></th>
+               <th>Insert<img src="images/icons/sort-table.gif"></th>
+               <th>Delete<img src="images/icons/sort-table.gif"></th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+               <td class="first-column">Array</td>
+               <td id="avg-search" data-text="3" class="yellow">O(n)</td>
+               <td id="avg-insert" data-text="6">N/A</td>
+               <td id="avg-delete" data-text="6">N/A</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="6">N/A</td>
+               <td id="worst-delete" data-text="6">N/A</td>
+            </tr>
+            <tr>
+               <td class="first-column">Sorted Array</td>
+               <td id="avg-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-insert" data-text="3" class="yellow">O(n)</td>
+               <td id="avg-delete" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-insert" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-delete" data-text="3" class="yellow">O(n)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Linked List</td>
+               <td id="avg-search" data-text="3" class="yellow">O(n)</td>
+               <td id="avg-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="avg-delete" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-delete" data-text="1" class="greenest">O(1)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Doubly Linked List</td>
+               <td id="avg-search" data-text="3" class="yellow">O(n)</td>
+               <td id="avg-insert" data-text="3" class="greenest">O(1)</td>
+               <td id="avg-delete" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-delete" data-text="3" class="greenest">O(1)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Stack</td>
+               <td id="avg-search" data-text="3" class="yellow">O(n)</td>
+               <td id="avg-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="avg-delete" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-delete" data-text="1" class="greenest">O(1)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Hash table</td>
+               <td id="avg-search" data-text="1" class="greenest">O(1)</td>
+               <td id="avg-insert" data-text="1" class="greenest">O(1)</td>
+               <td id="avg-delete" data-text="1" class="greenest">O(1)</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-delete" data-text="3" class="yellow">O(n)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Binary Search Tree</td>
+               <td id="avg-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-insert" data-text="2" class="green">O(log
+
+                  n)</td>
+               <td id="avg-delete" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-search" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-insert" data-text="3" class="yellow">O(n)</td>
+               <td id="worst-delete" data-text="3" class="yellow">O(n)</td>
+            </tr>
+            <tr>
+               <td class="first-column">B-Tree</td>
+               <td id="avg-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-delete" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+            </tr>
+            <tr>
+               <td class="first-column">Red-Black tree</td>
+               <td id="avg-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-delete" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+            </tr>
+            <tr>
+               <td class="first-column">AVL Tree</td>
+               <td id="avg-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="avg-delete" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-search" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-insert" data-text="2" class="green">O(log
+                  n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+            </tr>
+
+         </tbody>
+      </table>
+      
+            <!-- ================GROWTH RATES================= -->
+      <table id="growth-table">
+         <caption class="table-titles">Growth Rates</caption>
+         <thead>
+            <tr>
+               <th>n =</th>
+               <th>O(log n)</th>
+               <th>O(n)</th>
+               <th>O(n log n)</th>
+               <th>O(n<sup>2</sup>)
+               </th>
+               <th>O(2<sup>n</sup>)
+               </th>
+               <th>O(n!)</th>
+            </tr>
+         </thead>
+
+         <tbody>
+
+            <tr>
+               <td>10</td>
+               <td class="greenest">0.003ns</td>
+               <td class="greenest">0.01ns</td>
+               <td class="greenest">0.033ns</td>
+               <td class="greenest">0.1ns</td>
+               <td class="greenest">1ns</td>
+               <td class="green">3.65ms</td>
+            </tr>
+            <tr>
+               <td>20</td>
+               <td class="greenest">0.004ns</td>
+               <td class="greenest">0.02ns</td>
+               <td class="greenest">0.086ns</td>
+               <td class="greenest">0.4ns</td>
+               <td class="green">1ms</td>
+               <td class="red">77years</td>
+            </tr>
+            <tr>
+               <td>30</td>
+               <td class="greenest">0.005ns</td>
+               <td class="greenest">0.03ns</td>
+               <td class="greenest">0.147ns</td>
+               <td class="greenest">0.9ns</td>
+               <td class="green">1sec</td>
+               <td class="red">8.4x10<sup>15</sup>yrs
+               </td>
+            </tr>
+
+            <tr>
+               <td>40</td>
+               <td class="greenest">0.005ns</td>
+               <td class="greenest">0.04ns</td>
+               <td class="greenest">0.213ns</td>
+               <td class="greenest">1.6ns</td>
+               <td class="orange">18.3min</td>
+                <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>50</td>
+               <td class="greenest">0.006ns</td>
+               <td class="greenest">0.05ns</td>
+               <td class="greenest">0.282ns</td>
+               <td class="greenest">2.5ns</td>
+               <td class="red">13days</td>
+                <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>100</td>
+               <td class="greenest">0.07</td>
+               <td class="greenest">0.1ns</td>
+               <td class="greenest">0.644ns</td>
+               <td class="greenest">0.10ns</td>
+               <td class="red">4x10<sup>13</sup>yrs
+                <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>1,000</td>
+               <td class="greenest">0.010ns</td>
+               <td class="greenest">1.00ns</td>
+               <td class="greenest">9.966ns</td>
+               <td class="green">1ms</td>
+                <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>10,000</td>
+               <td class="greenest">0.013ns</td>
+               <td class="greenest">10ns</td>
+               <td class="greenest">130ns</td>
+               <td class="green">100ms</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>100,000</td>
+               <td class="greenest">0.017ns</td>
+               <td class="green">0.10ms</td>
+               <td class="green">1.67ms</td>
+               <td class="yellow">10sec</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>1'000,000</td>
+               <td class="greenest">0.020ns</td>
+               <td class="green">1ms</td>
+               <td class="green">19.93ms</td>
+               <td class="orange">16.7min</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>10'000,000</td>
+               <td class="greenest">0.023ns</td>
+               <td class="green">0.01sec</td>
+               <td class="green">0.23ms</td>
+               <td class="red">1.16days</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>100'000,000</td>
+               <td class="greenest">0.027ns</td>
+               <td class="green">0.10sec</td>
+               <td class="green">2.66sec</td>
+               <td class="red">115.7days</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+            <tr>
+               <td>1,000'000,000</td>
+               <td class="greenest">0.030ns</td>
+               <td class="green">1sec</td>
+               <td class="yellow">29.90sec</td>
+               <td class="red">31.7 years</td>
+               <td class="red">--</td>
+               <td class="red">--</td>
+            </tr>
+
+         </tbody>
+      </table>
+
+      
+
+
+      <article>
+         <h1 class="titles">Comparison graph</h1>
+
+         <img class="graphs" src="images/graphs/comparison.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+
+         <div class="division"></div>
+      </article>
+
+
+   </div>
+   <!-- =================/MAIN=============================== -->
+
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/jquery.tablesorter.js"></script>
+</body>
+</html>
