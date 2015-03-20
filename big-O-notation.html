@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link
+   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8">
+<title>Big O Notation</title>
+
+<link rel="icon" href="images/icons/favicon.ico">
+</head>
+
+<body>
+   <!-- ===================== ASIDE=================== -->
+   <aside>
+      <a href="index.html"><img id="logo"
+         src="images/logo-algos.svg"
+         onerror="this.onerror=null; this.src='image.svg'"></a> <a
+         id="menu-button" href="#">Menu</a>
+      <nav id="responsive-nav">
+         <ul>
+            <li><a href="index.html"><img class="aside-icons"
+                  src="images/icons/cheat-sheets.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O cheat sheets</span></a></li>
+
+            <li><a href="intro.html"><img class="aside-icons"
+                  src="images/icons/intro-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">intro</span></a></li>
+
+            <li><a href="big-O-notation.html"><img
+                  class="aside-icons" src="images/icons/big-o-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O notation</span></a></li>
+
+            <li><a href="data-structures.html"><img
+                  class="aside-icons"
+                  src="images/icons/data-structures-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">data structures</span></a></li>
+
+            <li><a href="algorithms.html"><img
+                  class="aside-icons" src="images/icons/algo-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="responsnav-descriptionsive-hide">algorithms</span></a></li>
+
+            <li><a href="https://github.com/cooervo/AlgosAndDS"
+               target="_blank"><img class="aside-icons"
+                  src="images/icons/github.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">Github</span></a></li>
+         </ul>
+      </nav>
+
+      <div id="share-div">
+         <ul id="share-list">
+
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/FB-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/twitter-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/google-plus-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+         </ul>
+      </div>
+
+   </aside>
+   <!-- ===================/ASIDE============================ -->
+
+   <!-- ====================MAIN======================= -->
+   <div id="main">
+
+      <article>
+         <h1 class="titles">HOW TO DETERMINE COMPLEXITIES</h1>
+
+         <p>We can determine complexity based on the type of
+            statements used by a program. The following examples are in
+            java but can be easily followed if you have basic
+            programming experience and use big O notation we will
+            explain later why big O notation is commonly used:</p>
+
+         <h2 class="inner-titles">Constant time: O(1)</h2>
+
+         <p>
+            The following operations take <em>constant time</em>:
+         </p>
+         <ul>
+            <li>Assigning a value to some variable</li>
+            <li>Inserting an element in an array</li>
+            <li>Determining if a binary number is even or odd.</li>
+            <li>Retrieving element i from an array</li>
+            <li>Retrieving a value from a hash table(dictionary)
+               with a key</li>
+         </ul>
+         <p>They take constant time because they are "simple"
+            statements. In this case we say the statement time is O(1)</p>
+
+         <div class="code-div">
+
+            <pre>
+					<code class="Jcode">
+	int example = 1;</code>
+				</pre>
+         </div>
+
+         <p>As you can see in the graph below constant time is
+            indifferent of input size. Declaring a variable, inserting
+            an element in a stack, inserting an element into an unsorted
+            linked list all these statements take constant time.</p>
+
+         <img class="graphs" src="images/graphs/constant.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+         <h2 class="inner-titles">Linear time: O(n)</h2>
+         <p>
+            The next loop executes N times, if we assume the statement
+            inside the loop is O(1), then the total time for the loop is
+            N*O(1), which equals O(N) also known as <em>linear time</em>:
+         </p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+	for (int i = 0; i &lt; N; i++) {
+		 <span class="code-comment">   //do something in constant time...</span>
+	}
+				</code>
+				</pre>
+         </div>
+
+         <p>In the following graph we can see how running time
+            increases linearly in relation to the number of elements n:</p>
+         <img class="graphs" src="images/graphs/linear.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+         <p>More examples of linear time are:</p>
+         <ul>
+            <li>Finding an item in an unsorted collection or a
+               unbalanced tree (worst case)</li>
+            <li>Sorting an array via bubble sort</li>
+         </ul>
+
+         <h2 class="inner-titles">
+            Quadratic time: O(n<sup>2</sup>)
+         </h2>
+         <p>
+            In this example the first loop executes N times. For each
+            time the outer loop executes, the inner loop executes N
+            times. Therefore, the statement in the nested loop executes
+            a total of N * N times. Here the complexity is O(N*N) which
+            equals O(N<sup>2</sup>). This should be avoided as this
+            complexity grows in <em>quadratic time</em>
+         </p>
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+	for (int i=0; i &lt; N; i++) {
+         		for(int j=0; j&lt; N; j++){
+         			<span class="code-comment">   //do something in constant time...</span>
+         		}
+	}
+				</code>
+				</pre>
+         </div>
+
+         <p>Some extra examples of quadratic time are:</p>
+         <ul>
+            <li>Performing linear search in a matrix</li>
+            <li>Time complexity of quicksort, which is highly
+               improbable as we will see in the <a
+               href="algorithms.html">Algorithms</a> section of this
+               website.
+            </li>
+            <li>Insertion sort</li>
+         </ul>
+
+         <p>Algorithms that scale in quadratic time are better to be
+            avoided. Once the input size reaches n=100,000 element it
+            can take 10 seconds to complete. For an input size of
+            n=1’000,000 it can take ~16 min to complete; and for an
+            input size of n=10’000,000 it could take ~1.1 days to
+            complete...you get the idea.</p>
+         <img class="graphs" src="images/graphs/quadratic.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+
+
+
+         <h2 class="inner-titles">Logarithmic time: O(Log n)</h2>
+         <p>
+            Logarithmic time grows slower as N grows. An easy way to
+            check if a loop is log n is to see if the counting variable
+            (in this case: i) doubles instead of incrementing by 1. In
+            the following example
+            <code>int i</code>
+            doesn’t increase by 1 (i++), it doubles with each run thus
+            traversing the loop in log(n) time:
+         </p>
+
+         <div class="code-div">
+
+            <pre>
+					<code class="Jcode">
+	for(int i=0; i &lt; n; i *= 2) {
+       	  	<span class="code-comment">//do something in constant time...</span>
+    	}						
+	</code>
+				</pre>
+         </div>
+         <p>Some common examples of logarithmic time are:</p>
+         <ul>
+            <li>Binary search</li>
+            <li>Insert or delete an element into a heap</li>
+         </ul>
+
+         <p>Don't feel intimidated by logarithms. Just remember that
+            logarithms are the inverse operation of exponentiating
+            something. Logarithms appear when things are constantly
+            halved or doubled.</p>
+
+         <p>Logarithmic algorithms have excellent performance in
+            large data sets:</p>
+
+         <img class="graphs" src="images/graphs/log.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+         <h2 class="inner-titles">Linearithmic time: O(n*Log n)</h2>
+
+         <p>Linearithmic algorithms are capable of good performance
+            with very large data sets. Some examples of linearithmic
+            algorithms are:</p>
+         <ul>
+            <li>heapsort</li>
+            <li>merge sort</li>
+            <li>Quick sort</li>
+         </ul>
+
+         <p>
+            We'll see a custom implementation of Merge and Quicksort in
+            the <a href="algorithms.html">algorithms</a> section. But
+            for now the following example helps us illustrate our point:
+         </p>
+
+         <div class="code-div">
+
+            <pre>
+					<code class="Jcode">
+	for(int i= 0; i&lt; n; i++) { <span class="code-comment">// linear loop  O(n) * ...</span>
+          		for(int j= 1; j&lt; n; j *= 2){ <span class="code-comment">// ...log (n)</span>
+              		<span class="code-comment">  //do something in constant time...</span>
+          		}
+	}					
+					</code>
+				</pre>
+         </div>
+
+         <img class="graphs" src="images/graphs/linearithmic.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+
+         <h2 class="inner-titles">Conclusion</h2>
+         <p>
+            As you might have noticed, Big O notation describes the
+            worst case possible. When you loop through an array in order
+            to find if it contains <em>X</em> item the worst case is
+            that it’s at the end or that it’s not even present on the
+            list. Making you iterate through all n items, thus O(n). The
+            best case would be for the item we search to be at the
+            beginning so every time we loop it takes constant time to
+            search but this is highly uncommon and becomes more
+            improbable as the list of items increases. In the next
+            section we'll look deeper into why big O focuses on worst
+            case analysis.
+         </p>
+
+         <p>A comparison of the first four complexities, might let
+            you understand why for large data sets we should avoid
+            quadratic time and strive towards logarithmic or
+            linearithmic time:</p>
+
+         <img class="graphs" src="images/graphs/comparison.svg"
+            onerror="this.onerror=null; this.src='image.svg'">
+
+
+         <div class="division"></div>
+      </article>
+
+      <article>
+         <h1 class="titles">BIG O NOTATION AND WORST CASE ANALYSIS</h1>
+         <p>Big O notation is simply a measure of how well an
+            algorithm scales (or its rate of growth). This way we can
+            describe the performance or complexity of an algorithm. Big
+            O notation focuses on the worst-case scenario.</p>
+         <p>
+            Why focus on worst case performance? At first look it might
+            seem counter-intuitive why not focus on best case or at
+            least in average case performance? I like a lot the answer
+            given in <i>The Algorithms Design Manual</i> by S. Skiena:
+         </p>
+         <p>Imagine you go to a casino what will happen if you bring
+            n dollars?</p>
+         <ul>
+            <li><p>
+                  The <b>best case</b>, is that you walk out owning the
+                  casino, it’s possible but so improbable that you don’t
+                  even think about it.
+               </p></li>
+            <li><p>
+                  The <b>average case</b>, is a little more tricky to
+                  prove as you need <em>domain knowledge</em> in order
+                  to identify which is the average case. For example,
+                  the average case in our example is that the typical
+                  bettor loses ~87% of the money that they bring to the
+                  casino, but people who are drunk surely loose even
+                  more, what about experienced professional players and
+                  what exactly is the average? How did they determined
+                  it? Who determined the average case? Are their metrics
+                  correct? Average case just makes the task of analyzing
+                  an algorithm even more complex.
+               </p></li>
+            <li><p>
+                  The <b>worst case</b> is that you lose all your n
+                  dollars, this is easy to calculate and very likely to
+                  happen.
+               </p></li>
+         </ul>
+         <p>Now think of this in a context of a program with
+            .search() method which takes linear time to execute:</p>
+         <p>The worst case is O(n), this is when the key is at the
+            end or never present in the list. Which might happen.</p>
+         <p>The best case is O(1), this happens if and only if the
+            key is at the beginning of the list. Which becomes even more
+            unlikely as n grows.</p>
+         <div class="division"></div>
+
+
+      </article>
+   </div>
+   <!-- =================/END MAIN===================== -->
+
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

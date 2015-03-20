@@ -1,0 +1,308 @@
+@CHARSET "UTF-8";
+
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	font-family: sans-serif, Verdana, serif;
+	font-size: 0.9em;
+}
+
+p{
+      line-height:22px;
+ }
+ 
+ li{
+   font-size:1.2em;
+   margin-bottom: 0.2em;
+   font-weight: 500;
+   font-family:   "Titillium Web",sans-serif, Verdana, serif;
+   color:rgba(0,0,0, 0.8);
+ }
+ 
+ a{
+   color: blue;
+ }
+ 
+ #main a:visited{
+  color:blue;
+}
+
+/*  ============== HEADER ============== */
+aside {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	min-width: 20%;
+	height: 100%;
+	left: 0;
+	background-color: rgba(0, 0, 100, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	opacity: 0.8;
+}
+
+aside:hover{
+	opacity: 1;
+}
+
+#menu-button{
+   display: none;
+  
+}
+
+#logo {
+	margin-top: 3.6em;
+	display: block;
+	margin-left: 1em;
+	margin-right: auto;
+	min-height: 10%;
+}
+
+
+aside ul:not(#share-list) {
+	margin: 5em auto;
+	vertical-align: middle;
+}
+
+aside ul:not(#share-list) li {
+	width: 100%;
+	margin: 0 auto 0px -2.8em;
+	list-style: none;
+	vertical-align: middle;
+	font-size: 1em;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+}
+
+aside a {
+	text-decoration: none;
+	color: black;
+}
+
+.aside-icons {
+	width: 1.5em;
+	margin-right: 0.6em;
+	margin-left: 3.6em;
+	margin-bottom: -6px;
+}
+
+#share-div {
+	margin-top: 7%;
+}
+
+#share-list {
+	width: 70%;
+	margin: 0 auto;
+	margin-left: -1em;
+}
+
+#share-list li {
+	display: inline;
+	margin: 0 auto;
+}
+
+.share-buttons {
+	width: 2em;
+	margin-left: 1.4em;
+}
+
+/*  ============== MAIN ============== */
+#main {
+	margin: 3% auto auto 14%;
+	min-width: 30%;
+	max-width: 70%;
+	min-height: 30em;
+	color: rgba(0, 0, 0, 0.8);
+	text-align: justify;
+	
+}
+
+#main a {
+	text-decoration: none;
+	color: rgb(25, 25, 112);
+}
+
+
+#main a:hover {
+	text-decoration: underline;
+	color: rgb(70, 70, 222);
+}
+
+
+article {
+	width: 70%;
+	min-height: 100px;
+	margin: 0px auto 1px 12em;
+	padding-bottom: 1em;
+	font-size: 1.1em;
+}
+
+.titles {
+    letter-spacing: -3px;
+	font-family: "Open Sans", sans-serif, Verdana, serif;
+	font-size: 2em;
+	color: rgba(0, 4, 10, 0.93);
+	text-align: left;
+}
+
+.inner-titles{
+     letter-spacing: -1.4px;
+	font-weight: bolder;
+	font-size: 1.5em;
+	color: rgba(0, 4, 10, 0.73);
+	margin-bottom: -10px;
+	margin-top: 1em;
+}
+
+.code-div{
+   line-height: 20px;
+	width: 78%;
+	margin: 2em auto;
+	background-color: black;
+	border-radius: 1em;
+	padding-right: 2em;
+	
+}
+.Jcode{
+	color: white;
+}
+
+.code-comment{
+   color: grey;
+}
+
+.graphs{
+	  display: block;
+	border-radius: 1em;
+	width: 50%;
+	margin: 0 auto 3em;
+}
+
+.division {
+	height: 0px;
+	margin: 3em auto;
+	width: 60%;
+	margin-bottom: 2em;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#github-icon{
+	width: 1.5em;
+	margin-bottom: -5px;
+	margin-left: 0.6em;
+}
+
+/* ========Media query============ */
+
+/* ==== Small devices ==== */
+@media(max-width: 768px){
+   
+   #greetings{
+      display:none;
+   }
+
+	aside{
+		position: relative;
+		top:-40px;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background-color: rgba(0, 0, 0, 0.05);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+		margin-bottom: -170px;
+		margin-right: -200px;
+			 
+	}
+	
+	#logo{
+	    margin-top: 2em;
+	    margin-left: -0.2em;
+		height: 4em;
+		float: left;
+	}
+
+	#menu-button{
+	  margin-top: 3em;
+	  margin-right: 0.8em;
+	  padding: 0.8em;
+	  border: 1px solid grey;
+	  border-radius: 9px;
+      float: right;
+      display: inline-table;
+	}
+	
+	#responsive-nav{
+	  display:none;
+	}
+		
+	article {
+		width: 100%;
+		min-height: 100px;
+		margin: 2% auto 1px 0;
+		padding-bottom: 2em;
+		font-size: 0.9em;
+	}
+	
+	.titles{
+		font-size: 1.6em;
+		text-align: left;
+		 letter-spacing: -2px;
+		 
+	}
+	
+	.inner-titles{
+		font-size: 1.3em;
+	}
+	
+	#main {
+		margin: 20% 10% auto 10%;
+	}
+	
+	.graphs{
+		width: 100%;
+	}
+	
+	.code-div{
+		width: 115%;
+		margin-left: -2em;
+	}
+	
+	code{
+		font-size: 11px;
+	}
+	
+
+	#share-list{
+		display:none;
+	}
+	
+}
+
+@media(min-width: 390px) and (max-width: 750px){
+	aside{
+		display: block;
+	}
+	
+	nav{
+	 display:table;
+		margin-top:30px;
+	}
+}
+
+@media(max-width: 990px){
+  #greetings{
+      display: none;
+   }  
+   
+}	

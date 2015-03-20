@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link
+   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8">
+<title>Algorithms and Data Structures</title>
+
+<link rel="icon" href="images/icons/favicon.ico">
+</head>
+
+<body>
+   <!-- ===================== ASIDE=================== -->
+<aside>
+      <a href="index.html"><img id="logo"
+         src="images/logo-algos.svg"
+         onerror="this.onerror=null; this.src='image.svg'"></a>
+      <a id="menu-button" href="#">Menu</a>
+      <nav id="responsive-nav">
+         <ul>
+            <li><a href="index.html"><img class="aside-icons"
+                  src="images/icons/cheat-sheets.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O cheat sheets</span></a></li>
+
+            <li><a href="intro.html"><img class="aside-icons"
+                  src="images/icons/intro-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">intro</span></a></li>
+
+            <li><a href="big-O-notation.html"><img
+                  class="aside-icons" src="images/icons/big-o-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O notation</span></a></li>
+
+            <li><a href="data-structures.html"><img
+                  class="aside-icons"
+                  src="images/icons/data-structures-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">data structures</span></a></li>
+                  
+            <li><a href="algorithms.html"><img
+                  class="aside-icons" src="images/icons/algo-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="responsnav-descriptionsive-hide">algorithms</span></a></li>
+           
+            <li><a href="https://github.com/cooervo/AlgosAndDS"
+               target="_blank"><img class="aside-icons"
+                  src="images/icons/github.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">Github</span></a></li>
+         </ul>
+      </nav>
+
+      <div id="share-div">
+         <ul id="share-list">
+
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/FB-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/twitter-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/google-plus-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+         </ul>
+      </div>
+
+   </aside>
+   <!-- ===================/ASIDE============================ -->
+
+   <!-- ====================MAIN======================= -->
+   <div id="main">
+
+      <article>
+         <h1 class="titles">WHAT IS AN ALGORITHM?</h1>
+
+         <p>The best definition of algorithms that I have come
+            across is the following:</p>
+         <p>
+            <b>Algorithms are a series of steps or rules for solving
+               a computational problem.</b>
+         </p>
+
+         <p>
+            A <b>computational problem</b> is a collection of questions
+            that computers might be able to solve.
+         </p>
+
+         <p>An example of a simple algorithm could be one used by a
+            coffee maker, it might look something like this:</p>
+
+         <div class="code-div">
+
+            <pre>
+					<code class="Jcode">
+	if (clock.getTime() == 7am){
+		coffeMaker.boilWater();
+		
+		if(water.isBoiled()){
+			coffeMaker.addCoffee();
+			coffeMaker.pourCoffee();
+		}
+		
+	} else{
+		coffeMaker.doNothing();
+	}					
+					</code>
+				</pre>
+         </div>
+
+
+         <div class="division"></div>
+      </article>
+      <article>
+         <h1 class="titles">ALGORITHM EFFICIENCY</h1>
+         <p>Algorithm efficiency is the study of the amount of
+            resources used by an algorithm. The less resources used by
+            the algorithm the more efficient it is. Nevertheless, to
+            have a good comparison between different algorithms we can
+            compare based on the resources it uses: how much time it
+            needs to complete, how much memory it uses to solve a
+            problem or how many operations it must do in order to solve
+            the problem</p>
+
+         <p>
+            <b>Time efficiency:</b> a measure of amount of time an
+            algorithm takes to solve a problem.
+         </p>
+
+         <p>
+            <b>Space efficiency:</b> a measure of the amount of memory
+            an algorithm needs to solve a problem.
+         </p>
+         <p>
+            <b>Complexity theory:</b> a study of algorithm performance
+            based on cost functions of statement counts.
+         </p>
+         <div class="division"></div>
+      </article>
+   </div>
+
+   <!-- =================/MAIN===================== -->
+   
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

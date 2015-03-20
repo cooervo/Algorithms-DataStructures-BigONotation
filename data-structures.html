@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link
+   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8">
+<title>Data Structures</title>
+
+<link rel="icon" href="images/icons/favicon.ico">
+</head>
+
+<body>
+   <!-- ===================== ASIDE=================== -->
+   <aside>
+      <a href="index.html"><img id="logo"
+         src="images/logo-algos.svg"
+         onerror="this.onerror=null; this.src='image.svg'"></a>
+      <a id="menu-button" href="#">Menu</a>
+      <nav id="responsive-nav">
+         <ul>
+            <li><a href="index.html"><img class="aside-icons"
+                  src="images/icons/cheat-sheets.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O cheat sheets</span></a></li>
+
+            <li><a href="intro.html"><img class="aside-icons"
+                  src="images/icons/intro-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">intro</span></a></li>
+
+            <li><a href="big-O-notation.html"><img
+                  class="aside-icons" src="images/icons/big-o-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">big O notation</span></a></li>
+
+            <li><a href="data-structures.html"><img
+                  class="aside-icons"
+                  src="images/icons/data-structures-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">data structures</span></a></li>
+                  
+            <li><a href="algorithms.html"><img
+                  class="aside-icons" src="images/icons/algo-icon.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="responsnav-descriptionsive-hide">algorithms</span></a></li>
+           
+            <li><a href="https://github.com/cooervo/AlgosAndDS"
+               target="_blank"><img class="aside-icons"
+                  src="images/icons/github.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"><span
+                  class="nav-descriptions">Github</span></a></li>
+         </ul>
+      </nav>
+
+      <div id="share-div">
+         <ul id="share-list">
+
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/FB-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/twitter-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+            <li><a href="#"><img class="share-buttons"
+                  src="images/icons/google-plus-share.svg"
+                  onerror="this.onerror=null; this.src='image.svg'"></a></li>
+         </ul>
+      </div>
+
+   </aside>
+   <!-- ===================/ASIDE============================ -->
+
+   <!-- ====================MAIN======================= -->
+   <div id="main">
+
+
+      <article>
+         <h1 class="titles">DATA STRUCTURES</h1>
+         <p>Data structures are fundamental constructs around which
+            you build your application. A data structure determines the
+            way data is stored, and organized in your computer. Whenever
+            data exists it must have some kind of data structure in
+            order to be stored in a computer.</p>
+
+         <h2 class="inner-titles">Contiguous or linked data
+            structures</h2>
+
+
+         <p>Data structures can be classified as either contiguous
+            or linked, depending whether they are based on arrays or
+            pointers(references):</p>
+         <p>
+            <b>Contiguous-allocated structures</b>, are made of single
+            slabs of memory, some of these data structures are arrays,
+            matrices, heaps, and hash tables.
+         </p>
+         <p>
+            <b>Linked data structures</b>, are composed as distinct
+            chunks of memory linked together by pointers (references).
+            Some of this data structures are lists, trees, and graph
+            adjacency lists.
+         </p>
+
+         <h2 class="inner-titles">Comparison</h2>
+         <p>Some advantages of linked lists over static arrays are:</p>
+         <ul>
+            <li>Overflow is more difficult to occur on a linked
+               structures than it is in an array. It only happens when
+               the memory is actually full.</li>
+            <li>Insertions and deletions are simpler than for
+               contiguous data structures such as arrays.</li>
+            <li>Linked list don’t need to know size on
+               initialization</li>
+         </ul>
+         <p>Advantages of arrays:</p>
+         <ul>
+            <li>Linked structures require allocating extra space
+               for storing pointers.</li>
+            <li>Arrays allow efficient access to any item.</li>
+         </ul>
+         <div class="division"></div>
+      </article>
+
+      <article>
+         <h1 class="titles">ARRAY</h1>
+
+         <p>Arrays are the fundamental contiguously allocated data
+            structure. They have a fixed size and each element can be
+            efficiently located by its index. Imagine an array is like a
+            street full of houses, one right next to each other, each
+            house can be easily located by its address (index).</p>
+         <p>The following is an example of usage of Java's
+            implementation of ArrayList, which is an Array that is
+            resized when needed</p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+     <span class="code-comment">          
+    /*
+    * We can determine at the moment of instantiation the capacity
+    * of the	ArrayList this gives a little boost in performance, 
+    * instead of making the array resize constantly
+    */</span>
+      List&lt;String&gt; exampleList = new ArrayList&lt;&gt;(100);
+   <span class="code-comment">    
+    /*
+     * Don't confuse capacity with size, the following 
+     * statement outputs 0, as currently the ArrayList 
+     * size is 0, but it's capacity is 100
+     */</span>
+      System.out.println(exampleList.size());
+   
+      exampleList.add("first");
+      exampleList.add("second");
+      exampleList.add("third");
+      
+      System.out.println(exampleList.size());<span class="code-comment">//prints 3</span>
+					</code>
+					</pre>
+         </div>
+         <div class="division"></div>
+      </article>
+
+      <article>
+         <h1 class="titles">SET</h1>
+
+         <p>A Set is a Collection that cannot contain duplicate
+            elements.</p>
+
+         <p>In Java the Set interface contains methods inherited
+            from Collection and adds the restriction that duplicate
+            elements are prohibited. Java also adds a stronger contract
+            on the behavior of the equals() and hashCode() methods,
+            allowing Set instances to be compared meaningfully even if
+            their implementation types differ. Some methods declared by
+            Set are:
+         <ul>
+            <li>add( ) Adds an object to the collection</li>
+            <li>clear( ) Removes all objects from the collection</li>
+            <li>contains( ) Returns true if a specified object is
+               an element within the collection</li>
+            <li>isEmpty( ) Returns true if the collection has no
+               elements</li>
+            <li>iterator( ) Returns an Iterator object for the
+               collection which may be used to retrieve an object</li>
+            <li>remove( ) Removes a specified object from the
+               collection</li>
+            <li>size( ) Returns the number of elements in the
+               collection</li>
+         </ul>
+         <p>Let's use an example of Java's implementation of set to
+            understand how it works. First, we need to define the
+            DataType and override the equals() and hashCode() methods:</p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   public class DataType {
+   	private String name;
+   	private int number;
+   	
+   	public DataType(String name, int number){
+   		this.name = name;
+   		this.number = number;
+   	}
+   
+   	@Override
+   	public int hashCode() {
+   		final int prime = 31;
+   		int result = 1;
+   		result = prime * result + ((name == null) ? 0 :
+   		 name.hashCode());
+   		return result;
+   	}
+   
+   	<span class="code-comment">    
+      /*
+      * We override method equals so that objects 
+      * with same name can't be added to the set, 
+      * but objects with same numbers can be added
+      */</span>
+   	@Override
+   	public boolean equals(Object obj) {
+   		if (obj == null)
+   			return false;
+   		
+   		if (this.getClass() != obj.getClass())
+   			return false;
+   		
+   		DataType other = (DataType) obj;
+   		if (other.name == null) 
+   				return false;
+   				
+   		return this.name.equals(other.name);
+   	}
+   
+   	@Override
+   	public String toString() {
+   		return "DataType: name=" + name + ", number=" + number;
+   	}
+   }
+					</code>
+				</pre>
+         </div>
+
+         <p>Now we can proceed to use the class</p>
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   Set&lt;DataType&gt; example = new HashSet&lt;&gt;();
+   	
+   DataType data1 = new DataType("first", 1);
+   <span class="code-comment">    	
+   //notice name repeated it's not valid</span>
+   DataType data2 = new DataType("first", 1);
+   <span class="code-comment">    
+   //notice different name but same number it's valid</span>
+   DataType data3 = new DataType("second", 1);
+   	
+   example.add(data1);
+   example.add(data2);
+   example.add(data3);
+   
+   for (DataType x : example){
+   	System.out.println(x);
+   }				
+					</code>
+				</pre>
+         </div>
+
+         <p>the output is:</p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   DataType: name=first, number=1
+   DataType: name=second, number=1
+					</code>
+				</pre>
+         </div>
+
+         <h2 class="inner-titles">Multiset</h2>
+
+         <p>A multiset is similar to a set but allows repeated
+            values. For Java, third-party libraries provide multiset
+            functionality</p>
+         <ul>
+            <li><p>Apache Commons Collections provides the Bag
+                  and SortedBag interfaces, with implementing classes
+                  like HashBag and TreeBag.</p></li>
+            <li><p>Google Guava provides the Multiset
+                  interface, with implementing classes like HashMultiset
+                  and TreeMultiset.</p></li>
+         </ul>
+         <p>This data structure is perfect for when we need to
+            perform statistical data that needs no sorting, for example
+            calculating the average or Standard Deviation of a multiset.</p>
+
+         <div class="division"></div>
+      </article>
+
+      <article>
+         <h1 class="titles">STACKS AND QUEUES</h1>
+         <p>
+            Arrays, Linked list, Trees are best use to represent real
+            objects, Stacks &amp; Queues are best to complete <em>tasks</em>,
+            they are like a tool to complete and then discard.
+         </p>
+         <p>They are useful to manage data in more a particular way
+            than arrays and lists.</p>
+         <ul>
+            <li>Queue are first in, first out (FIFO)</li>
+            <li>Stack are last in, first out (LIFO)</li>
+         </ul>
+         <p>When to use stacks and queues:</p>
+         <ul>
+            <li>Use a queue when you want to get things out in the
+               order that you put them in.</li>
+            <li>Use a stack when you want to get things out in the
+               reverse order than you put them in.</li>
+            <li>Use a list when you want to get anything out,
+               regardless of when you put them in (and when you don't
+               want them to automatically be removed).</li>
+         </ul>
+
+         <p>
+            The following is an implementation of Queues in Java, based
+            on the <a href="https://www.coursera.org/course/algs4partI">course
+               by R.Sedgewick in coursera</a>
+         </p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   <span class="code-comment">    
+   /*This implementation uses a singly-linked list 
+    * with a static nested class for linked-list nodes. 
+    * All operations take constant O(1) time in the worst case.
+    */</span>
+   public class Queue&lt;Generic&gt; implements Iterable&lt;Generic&gt; {
+      	private Node&lt;Generic&gt; firstNode; <span class="code-comment">// beginning of queue</span>
+      	private Node&lt;Generic&gt; lastNode; <span class="code-comment">// end of queue</span>
+      	private int size; <span class="code-comment">// number of elements on queue</span>
+      
+      	private static class Node&lt;Item&gt; {
+      		private Item item;
+      		private Node&lt;Item&gt; next;
+      	}
+      
+      	public Queue() {
+      		firstNode = null;
+      		lastNode = null;
+      		size = 0;
+      	}
+      
+      	public boolean isEmpty() {
+      		return firstNode == null;
+      	}
+      
+      	public int size() {
+      		return size;
+      	}
+      
+      	public Generic peek() {
+      		if (isEmpty())
+      			throw new NoSuchElementException("Queue underflow");
+      		return firstNode.item;
+      	}
+      
+      	public void enqueue(Generic item) {
+      		Node&lt;Generic&gt; oldlast = lastNode;
+      		lastNode = new Node&lt;Generic&gt;();
+      		lastNode.item = item;
+      		lastNode.next = null;
+      		if (isEmpty())
+      			firstNode = lastNode;
+      		else
+      			oldlast.next = lastNode;
+      		size++;
+      	}
+      
+      	public Generic dequeue() {
+      		if (isEmpty())
+      			throw new NoSuchElementException("Queue underflow");
+      		Generic item = firstNode.item;
+      		firstNode = firstNode.next;
+      
+      		if (isEmpty())
+      			lastNode = null;<span class="code-comment">// to avoid loitering</span>
+      		size--;
+      		return item;
+      	}
+      
+      	public String toString() {
+      		StringBuilder s = new StringBuilder();
+      		for (Generic item : this)
+      			s.append(item + " ");
+      		return s.toString();
+      	}
+      
+      	public Iterator&lt;Generic&gt; iterator() {
+      		return new ListIterator&lt;Generic&gt;(firstNode);
+      	}
+      
+      	private class ListIterator&lt;Item&gt; implements Iterator &lt;Item&gt; {
+      		private Node &lt;Item&gt; current;
+      
+      		public ListIterator(Node&lt;Item&gt; first) {
+      			current = first;
+      		}
+      
+      		public boolean hasNext() {
+      			return current != null;
+      		}
+      
+      		public void remove() {
+      			throw new UnsupportedOperationException();
+      		}
+      
+      		public Item next() {
+      			if (!hasNext())
+      				throw new NoSuchElementException();
+      			Item item = current.item;
+      			current = current.next;
+      			return item;
+      		}
+      	}
+      
+      	public static void main(String[] args) {
+      		Queue&lt;String&gt; q = new Queue&lt;&gt;();
+      		q.enqueue("FIRST IN");
+      		q.enqueue(" 2nd ");
+      		q.enqueue(" 3rd ");
+      
+      		System.out.println(q.dequeue() + " first out ==> FIFO");
+      	}
+   }
+					</code>
+				</pre>
+         </div>
+         <div class="division"></div>
+      </article>
+
+      <article>
+         <h1 class="titles">DICTIONARIES</h1>
+
+         <p>
+            A Dictionary is a data structure that maps a <b>key</b> to a
+            <b>value</b>.This is useful in cases where you want to be
+            able to access data via a particular key rather than an
+            integer index.
+         <p>In Java, Dictionaries are implemented as a Map: The Map
+            interface maps unique keys to values. A key is an object
+            that you use to retrieve a value at a later date.</p>
+         <p>Given a key and a value, you can store the value in a
+            Map object. After the value is stored, you can retrieve it
+            by using its key.</p>
+         <p>Following is a simple Map Implementation as an array.
+            Firstly, we create a class to help store the key and it's
+            value in an object:</p>
+
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   public class Entry&lt;K, V&gt; {
+      private final K key;
+      private V value;
+      
+      public Entry(K key, V value) {
+      	this.key = key;
+      	this.value = value;
+      }
+      
+      public K getKey() {
+      	return key;
+      }
+      
+      public V getValue() {
+      	return value;
+      }
+      
+      public void setValue(V value) {
+      	this.value = value;
+      }
+   }
+					</code>
+				</pre>
+         </div>
+
+         <p>Then the implementation of map:</p>
+         <div class="code-div">
+            <pre>
+					<code class="Jcode">
+   public class Map&lt;K, V&gt; {
+      private int size;
+      private int CAPACITY = 16;
+      private Entry&lt;K, V&gt;[] entriesArray = new Entry[CAPACITY];
+      
+      public void put(K key, V value) {
+      	boolean insert = true;
+      	for (int i = 0; i &lt; size; i++) {
+      		if (entriesArray[i].getKey().equals(key)) {
+      			entriesArray[i].setValue(value);
+      			insert = false;
+      		}
+      	}
+      	if (insert) {
+      		growArray();
+      		entriesArray[size++] = new Entry&lt;K, V&gt;(key, value);
+      	}
+      }
+      
+      private void growArray() {
+      	if (size == entriesArray.length) {
+      		int newSize = entriesArray.length * 2;
+      		entriesArray = Arrays.copyOf(entriesArray, newSize);
+      	}
+      }
+      
+      public V get(K key) {
+      	for (int i = 0; i &lt; size; i++) {
+      		if (entriesArray[i] != null) {
+      			if (entriesArray[i].getKey().equals(key)) {
+      				return entriesArray[i].getValue();
+      			}
+      		}
+      	}
+      	return null;
+      }
+      
+      public void remove(K key) {
+      	for (int i = 0; i &lt; size; i++) {
+      		if (entriesArray[i].getKey().equals(key)) {
+      			entriesArray[i] = null;
+      			size--;
+      			condenseArrayElements(i);
+      		}
+      	}
+      }
+      <span class="code-comment">    
+       //Moves backwards elements from start arg</span>
+       private void condenseArrayElements(int start){ 
+        for (int i = start; i &lt; size; i++) {
+      	  entriesArray[i] = entriesArray[i+1];
+        }
+       }
+       
+       public int size(){ return size; }
+      
+        public Set&lt;K&gt; keySet(){
+        Set&lt;K&gt; set = new HashSet&lt;K&gt;();
+        for (int i = 0; i &lt; size; i++) {
+         set.add(entriesArray[i].getKey());
+        }
+        return set;
+       }
+      
+        public static void main(String[] args) {
+      	  Map&lt;String, Integer&gt; mapExample = new Map&lt;&gt;();
+      	   mapExample.put("Key 1", 100);
+      	  System.out.println(mapExample.get("Key 1"));
+      	  
+      	  mapExample.put("Key 2", 200);
+      	  mapExample.put("Woaah", 100000);
+      	  System.out.println(mapExample.get("Key 2"));
+      	    
+      	  System.out.println("keySet: " + mapExample.keySet());
+      	 
+      	  System.out.print("Values: ");
+      	  for (String key : mapExample.keySet()){
+      	   System.out.print(mapExample.get(key) + " ");
+      	  }
+      	    mapExample.remove("Key 2");
+      	  System.out.println("\nkeySet: " + mapExample.keySet());
+      	 }
+   }
+					</code>
+				</pre>
+         </div>
+         <div class="division"></div>
+      </article>
+
+   </div>
+   <!-- =================/MAIN===================== -->
+   
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

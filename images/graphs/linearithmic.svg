@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="308.13px" height="257.838px" viewBox="0 0 308.13 257.838" enable-background="new 0 0 308.13 257.838"
+	 xml:space="preserve">
+<g id="Layer_1_1_">
+	<rect x="-1" y="-1.703" width="311" height="261"/>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="223.563" x2="273.081" y2="223.563"/>
+		<g>
+			<g>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="223.563" x2="53.541" y2="218.993"/>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="163.311" y1="223.563" x2="163.311" y2="218.993"/>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="273.081" y1="223.563" x2="273.081" y2="218.993"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1 0 0 1 44.4519 227.4216)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">0</text>
+			<text transform="matrix(1 0 0 1 44.4519 190.865)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">1</text>
+			<text transform="matrix(1 0 0 1 33.136 154.3084)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">100</text>
+			<text transform="matrix(1 0 0 1 21.82 117.7517)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">1,000</text>
+			<text transform="matrix(1 0 0 1 16.1618 81.1946)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">10,000</text>
+			<text transform="matrix(1 0 0 1 10.5041 44.6379)" fill="#FFFFFF" font-family="'Consolas'" font-size="10.291">100,000</text>
+		</g>
+		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="223.563" x2="53.541" y2="40.779"/>
+		<g>
+			<g>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="223.563" x2="59.029" y2="223.563"/>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="187.006" x2="59.029" y2="187.006"/>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="150.449" x2="59.029" y2="150.449"/>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="113.892" x2="59.029" y2="113.892"/>
+				<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="77.336" x2="59.029" y2="77.336"/>
+				<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.541" y1="40.779" x2="59.029" y2="40.779"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M218.196,223.544"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M218.196,223.544"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<path fill="#DFDFDF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M105.426,220.471"/>
+				<path fill="#DFDFDF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M105.426,226.471"/>
+			</g>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 51.274 28.6958)" fill="#FFFFFF" font-family="'Consolas'" font-size="12">t</text>
+<text transform="matrix(1 0 0 1 270.0037 235.3444)" fill="#FFFFFF" font-family="'Consolas'" font-size="12">n</text>
+<path fill="none" stroke="#D70096" stroke-width="2" stroke-miterlimit="10" d="M54.788,222.297c0,0,95.712-82.692,95.712-178.878"
+	/>
+<text transform="matrix(1 0 0 1 129.6362 36.2093)" fill="#D70096" font-family="'Consolas'" font-size="12">O(n log n)</text>
+</svg>

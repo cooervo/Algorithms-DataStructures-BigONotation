@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+
+#greetings{
+   font-size: 12px;
+   line-height: 15px;
+   width:65%;
+   margin-left: 23%;
+}
+
+
+#greetings a{
+      text-decoration: none;
+}
+#top-github{
+   height: 1.3em;
+}
+
+table {
+   border-collapse: separate;
+   font-size: 100%;
+   line-height: 10%;
+   margin: 3em auto 3em 20%;
+   text-align: left;
+   width: 90%;
+}
+
+thead {
+   background: grey;
+    cursor: pointer; 
+}
+
+.big-header-cells{
+   text-align: center;
+   cursor: none; 
+}
+
+th {
+   color: white;
+   font-weight: bolder;
+   padding: 1em 1.5em;
+   position: relative;
+   font-size: 1em;
+}
+
+td:not(.first-column){
+   text-align: center;
+   padding: 1em;
+}
+
+.first-column{
+   background-color: rgba(0,0,0,0.2);
+   font-weight: bolder;
+   font-size-adjust: 1px;
+}
+
+#growth-table th{
+   text-align: center;
+}
+
+#growth-table tbody tr td:FIRST-CHILD{
+  text-align: left;
+   background-color: rgba(0,0,0, 0.1);
+   font-weight: bolder;
+  
+}
+
+.greenest{
+   background-color: rgba(0,150,0, 0.6);
+   color: #004000;
+}
+
+.green{
+   background-color: rgba(130, 240, 10, 0.6);
+   color: #004000;
+}
+
+.yellow{
+   background-color: rgba(255,255,10, 0.6);
+   color: #804000;
+}
+
+.orange{
+   background-color: rgba(255,100,0, 0.6);
+   color: #804000;
+}
+
+.red{
+   background-color: rgba(255,0,0, 0.6);
+   color: #800000;
+}
+
+tbody:hover td{
+   color: transparent;
+   background-color: transparent;
+   border:0px;
+}
+
+tbody:hover tr:hover td {
+   color: black;
+}
+
+td {
+   padding: 1%;
+   position: relative;
+   transition: all 300ms;
+}
+
+.table-titles{
+        letter-spacing: -3px;
+	font-family: "Open Sans", sans-serif, Verdana, serif;
+	font-size: 2em;
+	color: rgba(0, 4, 10, 0.93);
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+
+
+/* ========Media query============ */
+@media ( max-width : 768px) {
+   table {
+      font-size: 70%;
+      line-height: 10px;
+      margin: auto;
+      margin-left: -13%;
+      width: 90%;
+   }
+   
+   thead{
+      font-size: 8px;
+      
+   }
+   
+   th {
+      color: white;
+      font-weight: bold;
+      position: relative;
+      font-size: 1em;
+   }
+   
+   article{
+      margin-top: 10em;
+   }
+   
+}
+
