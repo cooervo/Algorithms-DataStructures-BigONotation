@@ -62,10 +62,17 @@ aside:hover{
 #logo {
 	margin-top: 3.6em;
 	display: block;
+<<<<<<< HEAD
 	margin-left: -0.3em;
 	margin-right: auto;
 	min-height: 13%;
 	height: 13%;
+=======
+	margin-left: -0.1em;
+	margin-right: auto;
+	height: 13%;
+	min-height: 13%;
+>>>>>>> Adding Responsive Web Design (RWD) meta tag
 }
 
 
@@ -245,6 +252,7 @@ article {
 	
 	#responsive-nav{
 	  display:none;
+	  padding-top: 2em;
 	}
 		
 	article {
@@ -253,12 +261,13 @@ article {
 		margin: 2% auto 1px 0;
 		padding-bottom: 2em;
 		font-size: 0.9em;
+		text-align: justify;
+		display: 
 	}
 	
 	.titles{
 		font-size: 1.6em;
-		text-align: left;
-		 letter-spacing: -2px;
+	    letter-spacing: -2px;
 		 
 	}
 	
@@ -267,7 +276,7 @@ article {
 	}
 	
 	#main {
-		margin: 20% 10% auto 10%;
+		margin: 45% 10% auto 10%;
 	}
 	
 	.graphs{
@@ -286,6 +295,10 @@ article {
 
 	#share-list{
 		display:none;
+	}
+	
+	h1{
+	  text-align: justify;
 	}
 	
 }
