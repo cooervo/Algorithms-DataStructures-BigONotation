@@ -8,6 +8,8 @@
    rel='stylesheet' type='text/css'>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+
 <title>Big O cheat sheets</title>
 
 <link rel="icon" href="images/icons/favicon.ico">
@@ -49,7 +51,8 @@
                   onerror="this.onerror=null; this.src='image.svg'"><span
                   class="responsnav-descriptionsive-hide">algorithms</span></a></li>
 
-            <li><a href="https://github.com/cooervo/algortihms-datastructures"
+            <li><a
+               href="https://github.com/cooervo/algortihms-datastructures"
                target="_blank"><img class="aside-icons"
                   src="images/icons/github.svg"
                   onerror="this.onerror=null; this.src='image.svg'"><span
@@ -60,13 +63,18 @@
       <div id="share-div">
          <ul id="share-list">
 
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
-                  src="images/icons/FB-share.svg"
+            <li><a
+               href="https://www.facebook.com/sharer/sharer.php?u=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+                  class="share-buttons" src="images/icons/FB-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
-            <li><a href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
+            <li><a
+               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://cooervo.github.io/algortihms-datastructures/index.html"><img
+                  class="share-buttons"
                   src="images/icons/twitter-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
-            <li><a href="https://plus.google.com/share?url=http://cooervo.github.io/algortihms-datastructures/index.html"><img class="share-buttons"
+            <li><a
+               href="https://plus.google.com/share?url=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+                  class="share-buttons"
                   src="images/icons/google-plus-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
          </ul>
@@ -75,15 +83,16 @@
    </aside>
    <!-- ===================/END ASIDE============================ -->
    <p id="greetings">
-      About: I made this simple website as a fun project to help
-      me understand better: algorithms and data structures. And also to
-      have some practice in: Java, JavaScript, CSS and HTML. If you discover errors in the code or typos
-      I haven't noticed <a href="https://github.com/cooervo">please
-        let me know</a> or feel free to contribute by clicking this <a
-         href="https://github.com/cooervo/algortihms-datastructures">Github link <img
-         id="top-github" src="images/icons/github.svg"
-         onerror="this.onerror=null; this.src='image.svg'"></a>, fork
-      the project and make a pull request :)
+      <b>About:</b> I made this website as a fun project to help me understand
+      better: <b>algorithms</b>, <b>data structures</b> and <b>big O notation</b>. And also to have some
+      practice in: <b>Java</b>, <b>JavaScript</b>, <b>CSS</b>, <b>HTML</b> and <b>Responsive Web Design
+      (RWD)</b>. If you discover errors in the code or typos I haven't
+      noticed <a href="https://github.com/cooervo">please let me
+         know</a> or feel free to contribute by clicking this <a
+         href="https://github.com/cooervo/algortihms-datastructures">Github
+         link <img id="top-github" src="images/icons/github.svg"
+         onerror="this.onerror=null; this.src='image.svg'">
+      </a>, fork the project and make a pull request :)
    </p>
 
    <!-- ====================MAIN============================= -->
@@ -102,8 +111,8 @@
       </article>
 
       <!-- ================SORTING ALGORITHMS TABLE================= -->
-      
-         <!-- In tags <td> attribute data-text="x" is used to guide 
+
+      <!-- In tags <td> attribute data-text="x" is used to guide 
                   jquery.tablesorter.js in sorting by that attribute. script 
                   "textExtraction" enables it: 
                   
@@ -117,9 +126,9 @@
                   data-text="4"  === O(n log n)
                   data-text="5"  === O(n^2)
         -->
-      
-      
-      
+
+
+
       <table id="sorting-table" class="tablesorter">
          <caption class="table-titles">Sorting Algorithms</caption>
          <thead>
@@ -339,7 +348,8 @@
                   n)</td>
                <td id="worst-insert" data-text="2" class="green">O(log
                   n)</td>
-               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log
+                  n)</td>
             </tr>
             <tr>
                <td class="first-column">Red-Black tree</td>
@@ -353,7 +363,8 @@
                   n)</td>
                <td id="worst-insert" data-text="2" class="green">O(log
                   n)</td>
-               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log
+                  n)</td>
             </tr>
             <tr>
                <td class="first-column">AVL Tree</td>
@@ -367,13 +378,14 @@
                   n)</td>
                <td id="worst-insert" data-text="2" class="green">O(log
                   n)</td>
-               <td id="worst-delete" data-text="3" class="green">O(log n)</td>
+               <td id="worst-delete" data-text="3" class="green">O(log
+                  n)</td>
             </tr>
 
          </tbody>
       </table>
-      
-            <!-- ================GROWTH RATES================= -->
+
+      <!-- ================GROWTH RATES================= -->
       <table id="growth-table">
          <caption class="table-titles">Growth Rates</caption>
          <thead>
@@ -428,7 +440,7 @@
                <td class="greenest">0.213ns</td>
                <td class="greenest">1.6ns</td>
                <td class="orange">18.3min</td>
-                <td class="red">--</td>
+               <td class="red">--</td>
             </tr>
             <tr>
                <td>50</td>
@@ -437,7 +449,7 @@
                <td class="greenest">0.282ns</td>
                <td class="greenest">2.5ns</td>
                <td class="red">13days</td>
-                <td class="red">--</td>
+               <td class="red">--</td>
             </tr>
             <tr>
                <td>100</td>
@@ -446,7 +458,7 @@
                <td class="greenest">0.644ns</td>
                <td class="greenest">0.10ns</td>
                <td class="red">4x10<sup>13</sup>yrs
-                <td class="red">--</td>
+               <td class="red">--</td>
             </tr>
             <tr>
                <td>1,000</td>
@@ -454,7 +466,7 @@
                <td class="greenest">1.00ns</td>
                <td class="greenest">9.966ns</td>
                <td class="green">1ms</td>
-                <td class="red">--</td>
+               <td class="red">--</td>
                <td class="red">--</td>
             </tr>
             <tr>
@@ -515,7 +527,7 @@
          </tbody>
       </table>
 
-      
+
 
 
       <article>
