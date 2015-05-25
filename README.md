@@ -19,5 +19,4 @@ This website uses the following technologies to work properly:
 * Responsive Web Design (RWD) to adjust to desktop and smartphones
 * Git for VCS
 
-### TO DO
-* Correct 3rd table values
+
