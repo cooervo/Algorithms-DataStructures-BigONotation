@@ -62,17 +62,10 @@ aside:hover{
 #logo {
 	margin-top: 3.6em;
 	display: block;
-<<<<<<< HEAD
 	margin-left: -0.3em;
 	margin-right: auto;
 	min-height: 13%;
 	height: 13%;
-=======
-	margin-left: -0.1em;
-	margin-right: auto;
-	height: 13%;
-	min-height: 13%;
->>>>>>> Adding Responsive Web Design (RWD) meta tag
 }
 
 
@@ -125,7 +118,7 @@ aside a {
 
 /*  ============== MAIN ============== */
 #main {
-	margin: 3% auto auto 14%;
+	margin: 3% auto auto 250px;
 	min-width: 30%;
 	max-width: 70%;
 	min-height: 30em;
