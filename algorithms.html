@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/style.css">
 <link
-   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   href='https://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
    rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1">
@@ -19,7 +19,7 @@
          <a href="index.html"><img id="logo"
             src="images/logo-algos.svg"
             onerror="this.onerror=null; this.src='image.svg'"></a>
-            
+
          <a id="menu-button" href="#">Menu</a>
       <nav id="responsive-nav">
          <ul>
@@ -59,16 +59,16 @@
          <ul id="share-list">
 
             <li><a
-               href="https://www.facebook.com/sharer/sharer.php?u=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://www.facebook.com/sharer/sharer.php?u=https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons" src="images/icons/FB-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons"
                   src="images/icons/twitter-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://plus.google.com/share?url=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://plus.google.com/share?url=https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons"
                   src="images/icons/google-plus-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
@@ -76,8 +76,8 @@
       </div>
 
    </aside>
-  
-  
+
+
    <!--  ======== /ASIDE ========  -->
 
    <!--  ======== MAIN ========  -->
@@ -171,9 +171,9 @@
             <pre>
 					<code class="Jcode">
     public class SelectionSort {
-    
+
        public static void selectionSort(Comparable[] array) {
-      
+
         for (int i = 0; i &lt; array.length; i++) {
          int min = i;
          for (int j = i + 1; j &lt; array.length; j++) {
@@ -190,13 +190,13 @@
         int comparison = j.compareTo(min);
         return  comparison&lt; 0;
        }
-      
+
        private static void swap(Comparable[] array, int i, int j) {
         Comparable temp = array[i];
         array[i] = array[j];
         array[j] = temp;
        }
-      
+
        public static &lt;E&gt; void printArray(E[] array) {
         for (int i = 0; i &lt; array.length; i++) {
          System.out.print(array[i] + " ");
@@ -212,30 +212,30 @@
         }
         return true;
        }
-       
+
         public static void main(String[] args) {
       	  Integer[] intArray = { 34, 17, 23, 35, 45, 9, 1 };
       	  System.out.println("Unsorted Array: ");
       	  printArray(intArray);
       	  System.out.println("\nIs intArray sorted? "
             + isSorted(intArray));
-      	
+
       	  selectionSort(intArray);
       	  System.out.println("\nSelection sort:");
       	  printArray(intArray);
       	  System.out.println("\nIs intArray sorted? "
             + isSorted(intArray));
-      	
+
       	  String[] stringArray = { "z", "g", "c", "o", "a",
             "@", "b", "A", "0", "." };
       	  System.out.println("\n\nUnsorted Array: ");
       	  printArray(stringArray);
-      	
+
       	  System.out.println("\n\nSelection sort:");
       	  selectionSort(stringArray);
       	  printArray(stringArray);
        }
-   }					
+   }
 					</code>
 				</pre>
          </div>
@@ -243,21 +243,21 @@
          <p>Output is:</p>
          <div class="code-div">
             <pre>
-               <code class="Jcode">         
-   Unsorted Array: 
-   34 17 23 35 45 9 1 
+               <code class="Jcode">
+   Unsorted Array:
+   34 17 23 35 45 9 1
    Is intArray sorted? false
-   
+
    Selection sort:
-   1 9 17 23 34 35 45 
+   1 9 17 23 34 35 45
    Is intArray sorted? true
-   
-   
-   Unsorted Array: 
-   z g c o a @ b A 0 . 
-   
+
+
+   Unsorted Array:
+   z g c o a @ b A 0 .
+
    Selection sort:
-   . 0 @ A a b c g o z 
+   . 0 @ A a b c g o z
          </code>
        </pre>
          </div>
@@ -276,7 +276,7 @@
             <pre>
                <code class="Jcode">
    public class ShellSort {
-   
+
     public static void shellSort(Comparable[] array) {
      int N = array.length;
      int h = 1;
@@ -293,31 +293,31 @@
    <span class="code-comment">
     // returns true if Comparable j is less than min</span>
     private static boolean isLess(Comparable j, Comparable min) {
-    
+
      int comparison = j.compareTo(min);
      return comparison&lt; 0;
-     
+
     }
-   
+
     private static void swap(Comparable[] array, int i, int j) {
-    
+
      Comparable temp = array[i];
      array[i] = array[j];
      array[j] = temp;
-     
+
     }
-   
+
     public static &lt;E&gt; void printArray(E[] array) {
-    
+
      for (int i = 0; i &lt; array.length; i++) {
       System.out.print(array[i] + " ");
      }
-     
+
     }
    <span class="code-comment">
     // Check if array is sorted</span>
     public static boolean isSorted(Comparable[] array) {
-    
+
      for (int i = 1; i &lt; array.length; i++) {
       if (isLess(array[i], array[i - 1])) {
        return false;
@@ -325,32 +325,32 @@
      }
      return true;
     }
-   
+
     public static void main(String[] args) {
-    
+
      Integer[] intArray = { 34, 1000, 23, 2, 35, 0, 9, 1 };
      System.out.println("Unsorted Array: ");
      printArray(intArray);
      System.out.println("\nIs intArray sorted? " + isSorted(intArray));
-   
+
      shellSort(intArray);
      System.out.println("\nSelection sort:");
      printArray(intArray);
      System.out.println("\nIs intArray sorted? " + isSorted(intArray));
-   
+
      String[] stringArray = { "z", "Z","999", "g", "c", "o",
          "a", "@", "b", "A","0", "." };
      System.out.println("\n\nUnsorted Array: ");
      printArray(stringArray);
-   
+
      System.out.println("\n\nSelection sort:");
      shellSort(stringArray);
      printArray(stringArray);
     }
    }
-               
-               
-               
+
+
+
                </code>
             </pre>
          </div>
@@ -359,20 +359,20 @@
          <div class="code-div">
             <pre>
                <code class="Jcode">
-   Unsorted Array: 
-   34 1000 23 2 35 0 9 1 
+   Unsorted Array:
+   34 1000 23 2 35 0 9 1
    Is intArray sorted? false
-   
+
    Selection sort:
-   0 1 2 9 23 34 35 1000 
+   0 1 2 9 23 34 35 1000
    Is intArray sorted? true
-   
-   
-   Unsorted Array: 
-   z Z 999 g c o a @ b A 0 . 
-   
+
+
+   Unsorted Array:
+   z Z 999 g c o a @ b A 0 .
+
    Selection sort:
-   . 0 999 @ A Z a b c g o z  
+   . 0 999 @ A Z a b c g o z
                </code>
             </pre>
          </div>
@@ -404,13 +404,13 @@
             <pre>
                <code class="Jcode">
    public class MergeSort {
-   
+
        public int[] sort(int [] array){
         mergeSort(array, 0, array.length-1);
         return array;
-        
+
        }
-       
+
        private void mergeSort(int[] array, int first, int last) {
        <span class="code-comment">
         // We need mid to divide problem into smaller size pieces</span>
@@ -425,45 +425,45 @@
         //merge solved pieces to get solution to original problem</span>
         int a = 0, f = first, l = mid + 1;
         int[] temp = new int[last - first + 1];
-      
+
         while (f &lt;= mid &amp;&amp; l &lt;= last) {
          temp[a++] = array[f] &lt; array[l] ? array[f++] : array[l++];
         }
-        
+
         while (f &lt;= mid) {
          temp[a++] = array[f++];
         }
-        
+
         while (l &lt;= last) {
          temp[a++] = array[l++];
         }
-        
+
         a = 0;
         while (first &lt;= last) {
          array[first++] = temp[a++];
         }
        }
-       
+
        public static void printArray(int[] array) {
         for (int i = 0; i &lt; array.length; i++) {
          System.out.print(array[i] + " ");
         }
-        
+
        }
-      
+
        public static void main(String[] args) {
-       
+
         System.out.println("Original array:");
         int[] example = { 100, 30, 55, 62, 2, 42, 20, 9, 394, 1, 0 };
         printArray(example);
-        
+
         System.out.println("\nMergesort");
         MergeSort merge = new MergeSort();
         merge.sort(example);
         printArray(example);
-        
+
        }
-   }  
+   }
                   </code>
             </pre>
          </div>
@@ -474,9 +474,9 @@
             <pre>
                <code class="Jcode">
    Original array:
-   100 30 55 62 2 42 20 9 394 1 0 
+   100 30 55 62 2 42 20 9 394 1 0
    Mergesort
-   0 1 2 9 20 30 42 55 62 100 394   
+   0 1 2 9 20 30 42 55 62 100 394
                </code>
             </pre>
          </div>
@@ -529,13 +529,13 @@
             <pre>
                <code class="Jcode">
    import java.util.Random;
-   
+
    public class QuickSort {
-   
+
        public void quicksort(int[] array) {
         quicksort(array, 0, array.length - 1);
        }
-       
+
        private void quicksort(int[] array, int first, int last) {
         if (first &lt; last) {
          int pivot = partition(array, first, last);
@@ -545,15 +545,15 @@
          quicksort(array, pivot + 1, last);
         }
        }
-       
+
        private int partition(int[] input, int first, int last) {
        <span class="code-comment">
         /*
-        *notice how pivot is randomly selected this makes O(n^2) 
+        *notice how pivot is randomly selected this makes O(n^2)
         *very low probability
         */</span>
-        int pivot = first + new Random().nextInt(last - first + 1); 
-        
+        int pivot = first + new Random().nextInt(last - first + 1);
+
         swap(input, pivot, last);
         for (int i = first; i &lt; last; i++) {
          if (input[i] &lt;= input[last]) {
@@ -561,34 +561,34 @@
           first++;
          }
         }
-        
+
         swap(input, first, last);
         return first;
        }
-       
+
        private void swap(int[] input, int a, int b) {
         int temp = input[a];
         input[a] = input[b];
         input[b] = temp;
        }
-       
+
        public static void printArray(int[] array) {
         for (int i = 0; i &lt; array.length; i++) {
          System.out.print(array[i] + " ");
         }
        }
-       
+
        public static void main(String[] args) {
-       
-        int[] example = { 90, 6456, 20, 34, 65, -1, 54, -15, 
-        1, -999, 55, 529, 0 }; 
+
+        int[] example = { 90, 6456, 20, 34, 65, -1, 54, -15,
+        1, -999, 55, 529, 0 };
         System.out.println("Original Array");
         printArray(example);
         System.out.println("\n\nQuickSort");
         QuickSort sort = new QuickSort();
         sort.quicksort(example);
         printArray(example);
-        
+
        }
    }
                </code>
@@ -601,8 +601,8 @@
             <pre>
                <code class="Jcode">
    Original Array
-   90 6456 20 34 65 -1 54 -15 1 -999 55 529 0 
-   
+   90 6456 20 34 65 -1 54 -15 1 -999 55 529 0
+
    QuickSort
    -999 -15 -1 0 1 20 34 54 55 65 90 529 6456
                </code>
@@ -624,24 +624,24 @@
             <pre>
                <code class="Jcode">
    public class LinearSearch {
-   
+
       public static void main(String[] args) {
-         int[] array = { 0, 2, 9, 10, 100, -2, -3, 
+         int[] array = { 0, 2, 9, 10, 100, -2, -3,
                         902, 504, -1000, 20, 9923 };
-         
-         System.out.println(linearSearch(array, 100)); 
+
+         System.out.println(linearSearch(array, 100));
          <span class="code-comment">//prints: 100 found at position index: 4</span>
-         
-         System.out.println(linearSearch(array, -1)); 
+
+         System.out.println(linearSearch(array, -1));
          <span class="code-comment">//prints: not found</span>
-         
+
          System.out.println(linearSearch(array, 9923));
          <span class="code-comment">//prints: 9923 found at position index: 11</span>
       }
-      
+
       private static String linearSearch(int[] array, int toSearch){
          String result ="not found";
-         
+
          for (int i=0; i&lt; array.length; i++){
             if(array[i]==toSearch){
                result = array[i] +" found at position index: " + i;
@@ -650,7 +650,7 @@
          }
          return result;
       }
-   }  
+   }
                </code>
             </pre>
          </div>
@@ -691,32 +691,32 @@
             <pre>
                <code class="Jcode">
    public class BinarySearch {
-   
+
     private BinarySearch(){ } <span class="code-comment">//Constructor</span>
-   
+
     public static int binarySearch(int toSearch, int[]array){
         int lowestIndex = 0;
         int highestIndex = array.length -1;
-     
+
        while (lowestIndex &lt;= highestIndex){
-                  int mid = lowestIndex + 
+                  int mid = lowestIndex +
                      (highestIndex - lowestIndex)/2;
-   
-                   if  ( toSearch &lt; array[mid]) 
+
+                   if  ( toSearch &lt; array[mid])
                          highestIndex = mid -1;
-      
-                  else if ( toSearch &gt; array[mid]) 
+
+                  else if ( toSearch &gt; array[mid])
                               lowestIndex = mid + 1;
-      
+
                    else if (toSearch==array[mid])
                                return mid;
        }
        return -1;
     }
-    
+
     public static void main(String[] args) {
      int [] array = { -100, 1 , 2, 3, 4, 5, 100, 999, 10203};
-     
+
      System.out.println(binarySearch(999, array));  <span
                      class="code-comment">//returns index 6</span>
      System.out.println(binarySearch(-100, array)); <span
@@ -724,8 +724,8 @@
      System.out.println(binarySearch(6, array));    <span
                      class="code-comment">//returns index -1</span>
     }
-    
-   }  
+
+   }
                </code>
             </pre>
          </div>
@@ -743,7 +743,7 @@
 
    </div>
    <!--  ======== /MAIN ========  -->
-   
+
    <script src="js/jquery-1.11.2.min.js"></script>
    <script src="js/script.js"></script>
 </body>
