@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/style.css">
 <link
-   href='http://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
+   href='https://fonts.googleapis.com/css?family=Open+Sans:800|Titillium+Web:400,600,700,900'
    rel='stylesheet' type='text/css'>
 
 <meta charset="UTF-8">
@@ -20,7 +20,7 @@
          <a href="index.html"><img id="logo"
             src="images/logo-algos.svg"
             onerror="this.onerror=null; this.src='image.svg'"></a>
-            
+
          <a id="menu-button" href="#">Menu</a>
       <nav id="responsive-nav">
          <ul>
@@ -60,16 +60,16 @@
          <ul id="share-list">
 
             <li><a
-               href="https://www.facebook.com/sharer/sharer.php?u=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://www.facebook.com/sharer/sharer.php?u=https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons" src="images/icons/FB-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons"
                   src="images/icons/twitter-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://plus.google.com/share?url=http://cooervo.github.io/algortihms-datastructures/index.html"><img
+               href="https://plus.google.com/share?url=https://cooervo.github.io/algortihms-datastructures/index.html"><img
                   class="share-buttons"
                   src="images/icons/google-plus-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
@@ -144,25 +144,25 @@
          <div class="code-div">
             <pre>
 					<code class="Jcode">
-     <span class="code-comment">          
+     <span class="code-comment">
     /*
     * We can determine at the moment of instantiation the capacity
-    * of the	ArrayList this gives a little boost in performance, 
+    * of the	ArrayList this gives a little boost in performance,
     * instead of making the array resize constantly
     */</span>
       List&lt;String&gt; exampleList = new ArrayList&lt;&gt;(100);
-   <span class="code-comment">    
+   <span class="code-comment">
     /*
-     * Don't confuse capacity with size, the following 
-     * statement outputs 0, as currently the ArrayList 
+     * Don't confuse capacity with size, the following
+     * statement outputs 0, as currently the ArrayList
      * size is 0, but it's capacity is 100
      */</span>
       System.out.println(exampleList.size());
-   
+
       exampleList.add("first");
       exampleList.add("second");
       exampleList.add("third");
-      
+
       System.out.println(exampleList.size());<span class="code-comment">//prints 3</span>
 					</code>
 					</pre>
@@ -207,12 +207,12 @@
    public class DataType {
    	private String name;
    	private int number;
-   	
+
    	public DataType(String name, int number){
    		this.name = name;
    		this.number = number;
    	}
-   
+
    	@Override
    	public int hashCode() {
    		final int prime = 31;
@@ -221,28 +221,28 @@
    		 name.hashCode());
    		return result;
    	}
-   
-   	<span class="code-comment">    
+
+   	<span class="code-comment">
       /*
-      * We override method equals so that objects 
-      * with same name can't be added to the set, 
+      * We override method equals so that objects
+      * with same name can't be added to the set,
       * but objects with same numbers can be added
       */</span>
    	@Override
    	public boolean equals(Object obj) {
    		if (obj == null)
    			return false;
-   		
+
    		if (this.getClass() != obj.getClass())
    			return false;
-   		
+
    		DataType other = (DataType) obj;
-   		if (other.name == null) 
+   		if (other.name == null)
    				return false;
-   				
+
    		return this.name.equals(other.name);
    	}
-   
+
    	@Override
    	public String toString() {
    		return "DataType: name=" + name + ", number=" + number;
@@ -257,22 +257,22 @@
             <pre>
 					<code class="Jcode">
    Set&lt;DataType&gt; example = new HashSet&lt;&gt;();
-   	
+
    DataType data1 = new DataType("first", 1);
-   <span class="code-comment">    	
+   <span class="code-comment">
    //notice name repeated it's not valid</span>
    DataType data2 = new DataType("first", 1);
-   <span class="code-comment">    
+   <span class="code-comment">
    //notice different name but same number it's valid</span>
    DataType data3 = new DataType("second", 1);
-   	
+
    example.add(data1);
    example.add(data2);
    example.add(data3);
-   
+
    for (DataType x : example){
    	System.out.println(x);
-   }				
+   }
 					</code>
 				</pre>
          </div>
@@ -341,41 +341,41 @@
          <div class="code-div">
             <pre>
 					<code class="Jcode">
-   <span class="code-comment">    
-   /*This implementation uses a singly-linked list 
-    * with a static nested class for linked-list nodes. 
+   <span class="code-comment">
+   /*This implementation uses a singly-linked list
+    * with a static nested class for linked-list nodes.
     * All operations take constant O(1) time in the worst case.
     */</span>
    public class Queue&lt;Generic&gt; implements Iterable&lt;Generic&gt; {
       	private Node&lt;Generic&gt; firstNode; <span class="code-comment">// beginning of queue</span>
       	private Node&lt;Generic&gt; lastNode; <span class="code-comment">// end of queue</span>
       	private int size; <span class="code-comment">// number of elements on queue</span>
-      
+
       	private static class Node&lt;Item&gt; {
       		private Item item;
       		private Node&lt;Item&gt; next;
       	}
-      
+
       	public Queue() {
       		firstNode = null;
       		lastNode = null;
       		size = 0;
       	}
-      
+
       	public boolean isEmpty() {
       		return firstNode == null;
       	}
-      
+
       	public int size() {
       		return size;
       	}
-      
+
       	public Generic peek() {
       		if (isEmpty())
       			throw new NoSuchElementException("Queue underflow");
       		return firstNode.item;
       	}
-      
+
       	public void enqueue(Generic item) {
       		Node&lt;Generic&gt; oldlast = lastNode;
       		lastNode = new Node&lt;Generic&gt;();
@@ -387,45 +387,45 @@
       			oldlast.next = lastNode;
       		size++;
       	}
-      
+
       	public Generic dequeue() {
       		if (isEmpty())
       			throw new NoSuchElementException("Queue underflow");
       		Generic item = firstNode.item;
       		firstNode = firstNode.next;
-      
+
       		if (isEmpty())
       			lastNode = null;<span class="code-comment">// to avoid loitering</span>
       		size--;
       		return item;
       	}
-      
+
       	public String toString() {
       		StringBuilder s = new StringBuilder();
       		for (Generic item : this)
       			s.append(item + " ");
       		return s.toString();
       	}
-      
+
       	public Iterator&lt;Generic&gt; iterator() {
       		return new ListIterator&lt;Generic&gt;(firstNode);
       	}
-      
+
       	private class ListIterator&lt;Item&gt; implements Iterator &lt;Item&gt; {
       		private Node &lt;Item&gt; current;
-      
+
       		public ListIterator(Node&lt;Item&gt; first) {
       			current = first;
       		}
-      
+
       		public boolean hasNext() {
       			return current != null;
       		}
-      
+
       		public void remove() {
       			throw new UnsupportedOperationException();
       		}
-      
+
       		public Item next() {
       			if (!hasNext())
       				throw new NoSuchElementException();
@@ -434,13 +434,13 @@
       			return item;
       		}
       	}
-      
+
       	public static void main(String[] args) {
       		Queue&lt;String&gt; q = new Queue&lt;&gt;();
       		q.enqueue("FIRST IN");
       		q.enqueue(" 2nd ");
       		q.enqueue(" 3rd ");
-      
+
       		System.out.println(q.dequeue() + " first out ==> FIFO");
       	}
    }
@@ -474,20 +474,20 @@
    public class Entry&lt;K, V&gt; {
       private final K key;
       private V value;
-      
+
       public Entry(K key, V value) {
       	this.key = key;
       	this.value = value;
       }
-      
+
       public K getKey() {
       	return key;
       }
-      
+
       public V getValue() {
       	return value;
       }
-      
+
       public void setValue(V value) {
       	this.value = value;
       }
@@ -504,7 +504,7 @@
       private int size;
       private int CAPACITY = 16;
       private Entry&lt;K, V&gt;[] entriesArray = new Entry[CAPACITY];
-      
+
       public void put(K key, V value) {
       	boolean insert = true;
       	for (int i = 0; i &lt; size; i++) {
@@ -518,14 +518,14 @@
       		entriesArray[size++] = new Entry&lt;K, V&gt;(key, value);
       	}
       }
-      
+
       private void growArray() {
       	if (size == entriesArray.length) {
       		int newSize = entriesArray.length * 2;
       		entriesArray = Arrays.copyOf(entriesArray, newSize);
       	}
       }
-      
+
       public V get(K key) {
       	for (int i = 0; i &lt; size; i++) {
       		if (entriesArray[i] != null) {
@@ -536,7 +536,7 @@
       	}
       	return null;
       }
-      
+
       public void remove(K key) {
       	for (int i = 0; i &lt; size; i++) {
       		if (entriesArray[i].getKey().equals(key)) {
@@ -546,16 +546,16 @@
       		}
       	}
       }
-      <span class="code-comment">    
+      <span class="code-comment">
        //Moves backwards elements from start arg</span>
-       private void condenseArrayElements(int start){ 
+       private void condenseArrayElements(int start){
         for (int i = start; i &lt; size; i++) {
       	  entriesArray[i] = entriesArray[i+1];
         }
        }
-       
+
        public int size(){ return size; }
-      
+
         public Set&lt;K&gt; keySet(){
         Set&lt;K&gt; set = new HashSet&lt;K&gt;();
         for (int i = 0; i &lt; size; i++) {
@@ -563,18 +563,18 @@
         }
         return set;
        }
-      
+
         public static void main(String[] args) {
       	  Map&lt;String, Integer&gt; mapExample = new Map&lt;&gt;();
       	   mapExample.put("Key 1", 100);
       	  System.out.println(mapExample.get("Key 1"));
-      	  
+
       	  mapExample.put("Key 2", 200);
       	  mapExample.put("Woaah", 100000);
       	  System.out.println(mapExample.get("Key 2"));
-      	    
+
       	  System.out.println("keySet: " + mapExample.keySet());
-      	 
+
       	  System.out.print("Values: ");
       	  for (String key : mapExample.keySet()){
       	   System.out.print(mapExample.get(key) + " ");
@@ -591,7 +591,7 @@
 
    </div>
    <!-- ======== /MAIN ========  -->
-   
+
    <script src="js/jquery-1.11.2.min.js"></script>
    <script src="js/script.js"></script>
 </body>
